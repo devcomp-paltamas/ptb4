@@ -1,18 +1,60 @@
-
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('../lib/font-awesome-4.7.0/css/font-awesome.min.css');
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../lib/material-design-icons-3.0.1/iconfont/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../lib/material-design-icons-3.0.1/iconfont/MaterialIcons-Regular.woff2) format('woff2'), url(../lib/material-design-icons-3.0.1/iconfont/MaterialIcons-Regular.woff) format('woff'), url(../lib/material-design-icons-3.0.1/iconfont//MaterialIcons-Regular.ttf) format('truetype');
+}
 
+@font-face {
+  font-family: "EON_BrixSansWeb_REGULAR";
+  src: url("../fonts/BrixSans/EON_BrixSansWeb-Regular-.eot");
+  src: url("../fonts/BrixSans/EON_BrixSansWeb-Regular.woff") format("woff"), url("../fonts/BrixSans/EON_BrixSansWeb-Regular.otf") format("opentype"), url("../fonts/BrixSans/EON_BrixSansWeb-Regular.svg#filename") format("svg");
+}
 
 body {
   padding-top: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: EON_BrixSansWeb_REGULAR;
 }
 
 .lead {
   font-weight: 100;
+  font-family: 'Roboto', sans-serif;
 }
 
+.h1 {
+  font-family: EON_BrixSansWeb_REGULAR;
+}
 
+.home-media-image {
+  width: 35%;
+}
 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 
 .footer {
   padding-top: 40px;
@@ -21,18 +63,21 @@ body {
   border-top: 1px solid #eee;
 }
 
+
 /* Main marketing message and sign up button */
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
 }
+
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
 }
 
 .navbar {
-  background-image: linear-gradient(to bottom, #f7f7f7 0%,#eee 100%);
+  background-image: linear-gradient(to bottom, #f7f7f7 0%, #eee 100%);
   border: 1px solid #e5e5e5;
 }
 
@@ -41,14 +86,15 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
-
   .navbar-nav .nav-item {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
   }
 }
 
+
 /* Responsive: Portrait tablets and up */
+
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .masthead,
@@ -58,5 +104,3 @@ body {
     padding-left: 0;
   }
 }
-
-
