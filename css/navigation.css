@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* MENU ITEMS COLOR CODING*/
+.item_1{
+border-top:12px solid #eaeaea;
+background:#3f4058;
+}
+.item_1:hover{
+border-top:12px solid #3d41ba;
+background:#313264;
+}
+.item_10{
+border-top:12px solid #eaeaea;
+background:#2f5a57;
+}
+.item_10:hover{
+border-top:12px solid #00a99d;
+background:#19706a;
+}
+.item_11{
+border-top:12px solid #eaeaea;
+background:#466775;
+}
+.item_11:hover{
+border-top:12px solid #29abe2;
+background:#2e718d;
+}
+.item_2{
+border-top:12px solid #eaeaea;
+background:#4e4061;
+}
+.item_2:hover{
+border-top:12px solid #873cd4;
+background:#4d3072;
+}
+.item_3{
+border-top:12px solid #eaeaea;
+background:#633c58;
+}
+.item_3:hover{
+border-top:12px solid #b81d8b;
+background:#772860;
+}
+.item_4{
+border-top:12px solid #eaeaea;
+background:#552d32;
+}
+.item_4:hover{
+border-top:12px solid #9e0013;
+background:#6a1923;
+}
+.item_5{
+border-top:12px solid #eaeaea;
+background:#774244;
+}
+.item_5:hover{
+border-top:12px solid #ed1c24;
+background:#92282c;
+}
+.item_6{
+border-top:12px solid #eaeaea;
+background:#755538;
+}
+.item_6:hover{
+border-top:12px solid #f17200;
+background:#945419;
+}
+.item_7{
+border-top:12px solid #eaeaea;
+background:#7b6a44;
+}
+.item_7:hover{
+border-top:12px solid #f7b61e;
+background:#977629;
+}
+.item_8{
+border-top:12px solid #eaeaea;
+background:#5e6d4b;
+}
+.item_8:hover{
+border-top:12px solid #8cc63f;
+background:#617e3a;
+}
+.item_9{
+border-top:12px solid #eaeaea;
+background:#2c513e;
+}
+.item_9:hover{
+border-top:12px solid #009245;
+background:#19643d;
+}
+#portalnavigation{
+clear:left;
+width:100%;
+margin-bottom:2px;
+background:url('../gfx/navigationSpacer.gif') top right repeat-x;
+}
+#portalnavigation li{
+float:left;
+border-right:2px solid #ffffff;
+display:block;
+white-space:nowrap;
+}
+#portalnavigation li a{
+padding-top:7px;
+padding-left:6px;
+padding-right:6px;
+display:block;
+line-height:25px;
+}
+#portalnavigation li a{
+color:#ffffff;
+font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;
+}
+.siteMap .item1 h3{
+background-color: #313264;
+}
+.siteMap .item2 h3{
+background-color: #4d3072;
+}
+.siteMap .item3 h3{
+background-color: #772860;
+}
+.siteMap .item4 h3{
+background-color: #6a1923;
+}
+.siteMap .item5 h3{
+background-color: #92282c;
+}
+.siteMap .item6 h3{
+background-color: #945419;
+}
+.siteMap .item7 h3{
+background-color: #977629;
+}
+.siteMap .item8 h3{
+background-color: #617e3a;
+}
+.siteMap .item9 h3{
+background-color: #19643d;
+}
+.siteMap .item10 h3{
+background-color: #19706a;
+}
+.siteMap .item11 h3{
+background-color: #2e718d;
+}

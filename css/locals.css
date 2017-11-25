@@ -1,0 +1,555 @@
+@charset "utf-8";
+#portalnavigation li .activeItem {
+border-top:12px solid #b81d8b;
+background:#772860;
+}
+td a {
+width:100%;
+display:block;
+min-height:2.4em;
+vertical-align:middle;
+}
+td a span {
+width:100%;
+display:table-cell;
+min-height:2.4em;
+vertical-align:middle;
+}
+.docuList tbody tr td,
+.ownFolderList tbody tr td,
+.mailList tbody tr td {
+border-bottom:1px solid #eaeaea;
+padding:2px;
+line-height:1.5em;
+}
+.docuList tbody tr,
+.ownFolderList tbody tr,
+.mailList tbody tr {
+margin-top:3px;
+margin-bottom:3px;
+border-bottom:1px solid #eaeaea;
+}
+.docuList thead tr th,
+.ownFolderList thead tr th,
+.mailList thead tr th {
+padding:4px;
+border-left:2px solid #ffffff;
+background-color:#eaeaea;
+text-align:left;
+}
+.docuList thead tr th:first-child,
+.ownFolderList thead tr th:first-child,
+.mailList thead tr th:first-child {
+border-left:0px none;
+}
+.docuList thead tr,
+.ownFolderList thead tr,
+.mailList thead tr {
+background-color:#ffffff;
+text-align:left;
+}
+.docuList,
+.ownFolderList,
+.mailList {
+width:714px;
+margin-bottom:12px;
+border-spacing:0px;
+border-collapse:collapse;
+}
+.formSection fieldset span {
+/*margin:2px 0;*/
+display:block;
+line-height: 1.8em;
+}
+.labelAfter span {
+min-width:9em;
+display:inline-block;
+line-height:16px;
+}
+.leftNavigation .activeItem {
+background:transparent url('gfx/arrow.subMenu.gif') center left no-repeat;
+}
+.leftNavigation .activeItem a {
+color:#b81d8b;
+}
+.mailList tbody .unread {
+font-weight:bold;
+}
+.mailList tbody tr .col2 img {
+margin:0 auto;
+display:block;
+}
+.noLabelSize label {
+width:auto;
+display:inline;
+min-width:1em;
+}
+.nowidth {
+width:auto !important;
+white-space:nowrap;
+min-width:70px !important;
+}
+.ownFolderList tbody .col1 input,
+.mailList tbody .col1 input {
+padding:0;
+margin:0;
+height:auto;
+}
+.ownFolderList tbody .col1,
+.mailList tbody .col1 {
+width:16px;
+border:1px solid #ffffff;
+background:#eaeaea;
+text-align:center;
+}
+.ownFolderList tbody .col2,
+.mailList tbody .col2 {
+width:32px;
+border:1px solid #ffffff;
+background:#eaeaea;
+text-align:center;
+}
+.section p a {
+color:#b81d8b;
+}
+.twoColumnsForm p {
+display:inline !important;
+line-height: 1.8em;
+}
+.twoColumnsForm p label {
+display:inline-block;
+text-align:left !important;
+min-width:1em !important;
+}
+.twoColumnsForm p span {
+clear:none;
+display:inline !important;
+}
+.whitebox > div {
+margin-bottom:0;
+}
+.boxUK {
+overflow:hidden;
+height:100%;
+background: #fff url('gfx/main_top_background.gif') top left repeat-y;
+}
+.boxUK h2 {
+border-bottom:3px solid #b81d8b;
+padding-bottom:2px;
+color:#b81d8b;
+font-style:italic;
+font-family:"Trebuchet MS";
+display:block;
+background-color:#fff;
+}
+.boxUK p {
+padding:12px;
+}
+.boxUK p a {
+margin-left:12px;
+color:#993399;
+line-height:20px;
+height:20px;
+}
+.boxUK p input {
+float:left;
+}
+#breadcrumbs {
+margin-bottom:12px;
+font-family:"Trebuchet MS";
+font-style:italic;
+font-weight:bold;
+text-align:right;
+overflow:hidden;
+}
+#breadcrumbs p {
+padding-top: 2px;
+}
+#breadcrumbs a {
+white-space:nowrap;
+color:#ed1c24;
+overflow:hidden;
+}
+#breadcrumbs h2 {
+float:left;
+color:#302e2e;
+}
+#dateList {
+}
+#dateList li {
+width:19%;
+display:inline-block;
+}
+#dateList li a {
+display:block;
+font-weight:bold;
+}
+#dwnloadFileList {
+margin-top:12px;
+font-weight:bold;
+}
+#fldUser,
+#fldUser2,	
+#fldPass,
+#fldEmail,
+#fldOldPass,
+#fldOldPass2,	
+#fldNewPass,
+#fldRePass,
+#fldActCode,
+#fldPwExpDate {
+padding:4px;
+width:214px;
+border:1px solid #c5c5c5;
+}
+#formHolder {
+margin-bottom:12px;
+padding:8px 8px 2px 8px;
+background:#eaeaea;
+}
+#formHolder .formSection {
+margin-bottom:12px;
+}
+#formHolder .formSection .icon {
+float:left;
+}
+#formHolder .formSection .section {
+margin-left:30px;
+position:relative;
+}
+#formHolder .formSection .section .labelAfter {
+overflow:auto;
+}
+#formHolder .formSection .section .labelAfter .label,
+#formHolder .formSection .section .labelAfter label {
+width:auto;
+margin-right:16px !important;
+padding-left:5px;
+display:inline-block;
+text-align:left;
+line-height:20px;
+min-width:1em;
+height:20px;
+}
+#formHolder .formSection .section .labelAfter input {
+float:left;
+width:auto;
+}
+#formHolder .formSection .section .labelAfter span {
+display:inline;
+}
+#formHolder hr {
+margin:8px 0;
+}
+#formHolder .longtextarea {
+height:150px;
+}
+#formHolder .output {
+display:inline-block;
+font-weight:bold;
+line-height:20px;
+height:20px;
+}
+#formHolder .questionMark {
+width:11px;
+padding:0;
+margin:0;
+background:transparent;
+position:absolute;
+top:4px;
+right:8px;
+height:11px;
+}
+#formHolder .questionMark img {
+width:11px;
+height:11px;
+position:relative;
+}
+#formHolder .section .label,
+#formHolder .section label {
+float:left;
+padding-right:5px;
+white-space:nowrap;
+display:inline-block;
+text-align:left;
+line-height:20px;
+min-width:14.9em;
+height:20px;
+}
+#formHolder .section .shortLabel {
+min-width:9em !important;
+}
+#formHolder .textarea,
+#formHolder .longtextarea {
+width:99%;
+border:1px solid #aeaeae;
+display:inline-block;
+background:#ffffff;
+height:80px;
+}
+.section h2.legend {
+padding:0 0 0 6px !important;
+margin:0;
+color:#ffffff;
+background-color:#8f8f8f;
+margin-bottom:12px;
+line-height:20px;
+height:20px;
+display:list-item;
+list-style-type:none;
+overflow:auto;
+}
+.section div.legend {
+background-color:#8f8f8f;
+margin-bottom:12px;
+line-height:20px;
+height:20px;
+text-align:right;
+}
+.section div.legend h2 {
+float:left;
+padding:0 0 0 6px !important;
+margin:0;
+color:#ffffff;
+line-height:20px;
+height:20px;
+}
+.section div.legend span.control {
+padding:0 0 0 10px !important;
+margin:0;
+background-color:#eaeaea;
+line-height:20px;
+height:20px;
+display:inline-block;
+}
+#frmOwnFolder #formHolder {
+margin-bottom:2px;
+padding-bottom:8px;
+}
+#frmOwnFolder .controls {
+line-height:20px;
+overflow: hidden;
+}
+#frmOwnFolder .formSection {
+margin-bottom:0px;
+}
+#frmUKLogin fieldset {
+width:412px;
+}
+#frmUKLogin label {
+width:180px;
+float:left;
+padding:4px;
+display:inline;
+font-family:"Trebuchet MS";
+font-weight:bold;
+text-align:right;
+}
+#frmUKLogin span {
+clear:right;
+padding-bottom:12px;
+width:100%;
+display:block;
+}
+#logo a {
+display:block;
+background:url('https://gate.gov.hu/sso/gfx/logo.jpg') #ffffff top left no-repeat;
+text-indent:-999em;
+height:110px;
+}
+#logo span {
+display:block;
+background:url('https://gate.gov.hu/sso/gfx/logo.jpg') #ffffff top left no-repeat;
+text-indent:-999em;
+height:110px;
+}
+#outbox tbody .col4 {
+width:96px;
+}
+#outbox tbody .col4 a {
+color:#b81d8b;
+}
+#outbox tbody .col5,
+#outbox tbody col6 {
+width:120px;
+}
+#ownCases thead .col3 {
+width:120px;
+}
+#portalnavigation {
+margin-bottom:12px !important;
+}
+#referrer thead .col3,
+#referrer thead .col6 {
+width:110px;
+}
+#referrer thead .col7 {
+width:80px;
+}
+#subnavigation {
+margin-bottom:12px;
+}
+#subnavigation {
+background: transparent url('gfx/subNavigationFill.gif') center left repeat-x;
+}
+#subnavigation ul {
+width:100%;
+font-family:"Trebuchet MS";
+overflow:hidden;
+}
+#subnavigation ul li {
+float:left;
+border-left:2px solid #fff;
+display:block;
+vertical-align:middle;
+margin: 2px 0;
+}
+#subnavigation ul li a {
+padding-right:24px;
+display:block;
+color:#fff;
+background: transparent url('gfx/iconBreadcrumb.gif') center left no-repeat;
+text-indent:18px;
+line-height:3em;
+}
+#subnavigation ul li:first-child {
+padding-left:0px;
+padding-right:24px;
+display:block;
+background:#fff;
+color:#302e2e;
+font-style:italic;
+line-height:1em;
+}
+#tabControl2 li {
+float:left;
+width:358px;
+display:inline-block;
+}
+#tabControl2 li a,
+#tabControl3 li a {
+margin-bottom:0px;
+display:block;
+color:#b81d8b;
+background:#eaeaea;
+line-height:20px;
+text-indent:0.3em;
+}
+#tabControl2 li.activeItem,
+#tabControl3 li.activeItem {
+display:block;
+color:#ffffff;
+background:#b81d8b;
+font-weight:normal;
+font-style:normal;
+line-height:22px;
+text-indent:0.3em;
+}
+#tabControl2 li.margin,
+#tabControl3 li.margin {
+margin-right:2px;
+}
+#tabControl2,
+#tabControl3 {
+border-bottom:3px solid #b81d8b;
+height:22px;
+}
+#tabControl3 li {
+float:left;
+width:238px;
+display:inline-block;
+}
+#UKLoginBox {
+color:#302e2e;
+font-family:"Trebuchet MS";
+}
+#UKLoginBox .box {
+padding: 12px 12px;
+width:95%;
+position: relative;
+}
+#UKLoginBox a {
+color:#b81d8b;
+}
+#UKLoginBox h1 {
+margin-top:60px;
+margin-bottom:12px;
+color:#772860;
+}
+#UKLoginBox input[type="submit"] {
+margin-right:8px;
+}
+#UKLoginBox p {
+padding:0;
+margin:0;
+background:transparent;
+font-family:Arial;
+}
+#UKLoginBox span {
+padding-top:4px;
+padding-bottom:4px;
+}
+#UKLoginBox .box p {
+padding-left:6px;
+}
+#sidebar .box fieldset {
+padding-left:6px;
+}
+li.quota {
+font-weight:bold;
+}
+#URLGen {
+margin-right: 12px;
+}
+.radiogroup {
+line-height:20px !important;
+height:20px;
+}
+.radiogroup span {
+line-height:20px !important;
+vertical-align:middle;
+display: inline !important;
+margin: 0 8px 0 0;
+padding:0 0 1px 0;
+}
+.radiogroup input {
+line-height:20px !important;
+height:20px;
+display:inline;
+margin-right: 4px;
+vertical-align:middle;
+}
+.bottomMargin {
+margin-bottom:12px;
+}
+/* MUST BE AT THE END OF THE FILE */
+#box1 {
+background:transparent url('gfx/wm1.gif') right 1.5em no-repeat;
+min-height:170px;
+}
+#box2 {
+background:transparent url('gfx/wm2.gif') right 1.5em no-repeat;
+min-height:170px;
+}
+#box3 {
+background:transparent url('gfx/wm3.gif') right 1.5em no-repeat;
+min-height:170px;
+}
+span.highlight {
+color: #d1219f !important;
+font-style: italic;
+}
+#frmUKMessageDummy fieldset {
+	padding-left:10px;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	width:450px;
+}
+#frmUKMessageDummy span {
+	clear:right;
+	padding-top:10px;
+	padding-bottom:5px;
+	width:100%;
+	display:block;
+}

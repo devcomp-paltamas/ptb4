@@ -1,0 +1,37 @@
+@charset "utf-8";
+#main{
+}
+#container{
+width:480px;
+margin:0 auto;
+min-height:100%;
+position:relative;
+}
+#footernav{
+width: 428px !important;
+padding-top:1em;
+}
+#header{
+border-bottom:5px solid #772860;
+margin-bottom:64px;
+}
+#header #logo{
+width:305px !important;
+}
+#infoBox{
+min-width:100px !important;
+}
+#main:after{
+clear:both;
+display:block;
+content:'.';
+line-height:0;
+visibility:hidden;
+height:60px;
+}
+h1{
+color:#772860 !important;
+}
+#headerform{
+margin-top:55px;
+}

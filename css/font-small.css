@@ -1,0 +1,128 @@
+body {
+font-size:0.75em;
+}
+h1 {
+font-size:2.5em;
+}
+h2,
+#actual h3 {
+font-size:1.2em;
+}
+h3,
+h4,
+h5,
+h6 {
+font-size:1em;
+}
+#contentRight h3 {
+font-size:1.2em;
+}
+table {
+font-size:1em;
+}
+.box .delButton,
+.box .renButton {
+font-size:7px !important;
+}
+#labelList {
+font-size:1em;
+}
+#labelList span {
+font-size:1em;
+}
+#labelList span a {
+font-size:0.6em;
+}
+.morebutton {
+font-size:0.6em;
+}
+#footer #footernav {
+font-size:0.8em;
+}
+.section h2 {
+font-size:1em;
+}
+#frmUKLogin label {
+font-size:1.2em;
+}
+#subnavigation ul li:first-child {
+font-size:3em;
+}
+#leading h2 {
+font-size:2.5em;
+line-height: 1em;
+}
+form {
+font-size:1em;
+}
+select {
+font-size: 1em;
+}
+.toolRibbon a,
+.toolRibbonUse a,
+.toolRibbonDownload a {
+font-size:1.2em;
+}
+.toolRibbon a.ugyfelvonal {
+      font-size:0.9em;
+}
+
+#twoLevelList>ul>li>a {
+font-size:1.2em;
+}
+#twoLevelList ul li a {
+font-size:1.2em;
+}
+#twoLevelList ul li ul li a {
+font-size:1em;
+}
+#portalnavigation {
+font-size: 1.2em;
+}
+a.tag1 {
+font-size:0.9em;
+font-weight:100;
+}
+a.tag2 {
+font-size:0.95em;
+font-weight:200;
+}
+a.tag3 {
+font-size:1.05em;
+font-weight:350;
+}
+a.tag4 {
+font-size:1.12em;
+font-weight:500;
+}
+a.tag5 {
+font-size:1.2em;
+font-weight:600;
+}
+#portreStore div h3 {
+font-size:1em;
+}
+#twoLevelList > ul > li > a,
+#twoLevelList > ul > li > h3 > a,
+#actual > h3 > a {
+font-size: 1.2em;
+}
+#contentRight ul.orderedList li h3 {
+font-size:1em;
+}
+#tabControl2 li.activeItem,
+#tabControl3 li.activeItem {
+font-size:1em;
+}
+#contentRight ul.orderedListDark li h3 {
+font-size:1em;
+}
+.letterListShort li.inactive span {
+padding: 0 1px !important;
+}
+.letterListShort li a {
+padding: 0 0.09em !important;
+}
+p.noleftpad {
+	font-size:1.2em;
+}

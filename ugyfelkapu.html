@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu">
+
+<head>
+    <title>Ügyfélkapu :: Személyes ügyfél portál :: Belépés</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/JavaScript" />
+    <meta name="description" content="Magyarország.hu: a kormányzati portál" />
+    <meta name="author" content="Magyarország.hu szerkesztőség" />
+    <meta http-equiv="content-language" content="hu" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <!--base href="http://magyarorszag.hu" /-->
+    <!-- 
+ <style type="text/css" media="screen, projection">
+  @import "https://gate.gov.hu/sso/misc/default.css";
+ </style>
+ <style type="text/css" media="print">
+  @import "https://gate.gov.hu/sso/misc/print.css";
+ </style>
+  -->
+
+    <link href="css/navigation.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-small.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/globals.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/main-only.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/locals.css" rel="stylesheet" type="text/css" media="all" />
+
+
+    <script type="text/javascript" src="lib/sso/popcalendar.js"></script>
+    <script type="text/javascript" src="lib/sso/date.js"></script>
+    <script type="text/javascript" src="lib/sso/prototype.js"></script>
+    <script type="text/javascript" src="lib/sso/common.js"></script>
+
+    <link href="css/calendar.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <!--[if lte IE 7]>
+<link href="/sso/css/ie7-spec.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+    <!--[if lte IE 6]>
+<link href="/sso/css/ie6-spec.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/sso/css/ie6-main-only.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+
+    <link rel="start" title="Magyarország.hu címlap" href="/" />
+    <link rel="license" title="Magyarország.hu felhasználási irányelvek" href="/felhasznalasiiranyelvek" />
+    <link rel="shortcut icon" href="https://gate.gov.hu/sso/gfx/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="RSS - Hírek" href="/rss/hirek" />
+
+
+</head>
+
+<body>
+
+
+
+    <ul class="accessibility">
+        <li>
+            <a href="#main" title="Ugrás a tartalomra" accesskey="t">Ugrás a tartalomra</a>
+        </li>
+        <li>
+            <a href="#footer" title="Ugrás a láblécre" accesskey="l">Ugrás a láblécre</a>
+        </li>
+    </ul>
+    <hr class="accessibility" />
+
+    <div id="container">
+        <!--         <img src="https://audit.median.hu/cgi-bin/track.cgi?uc=12584480049353&amp;dc=1" 
+        style="position:absolute; left : 3px; width : 22px; top : 17px; height : 11px;"
+            width="1" height="1" alt="median" /> -->
+        <div id="body">
+            <div id="main">
+
+
+                <div id="header">
+                    <h1 id="logo">
+                        <a href="https://ugyfelkapu.magyarorszag.hu/" title="Magyarország.hu">Magyarország.hu</a>
+                    </h1>
+                    <hr class="accessibility" />
+
+                </div>
+                <h1 class="accessibility">TARTALOM</h1>
+                <div id="UKLoginBox">
+                    <h1>Lépjen be az Ügyfélkapun!</h1>
+                    <div class="box">
+
+
+                        <!--auth:form name="Login" style="display: block; clear: left;" method="post" defaultCommandChild="DefaultLoginURL" -->
+                        <form id="frmUKLogin" action="ApServlet" method="post">
+                            <fieldset>
+                                <legend>Bejelentkezés:</legend>
+                                <span>
+                                    <input type="hidden" name="partnerid" value="mohu" />
+                                    <input type="hidden" name="target" value="" />
+                                    <label for="fldUser">Felhasználónév:</label>
+                                    <input value="" id="fldUser" name="felhasznaloNev" type="text" class="text" />
+                                </span>
+                                <span>
+                                    <label for="fldPass">Jelszó:</label>
+                                    <input value="" id="fldPass" name="jelszo" type="password" class="text" />
+                                </span>
+                                <br />
+                                <legend>B4T adatok:</legend>
+                                <span>
+                                    <label for="fldUser">1T adat:</label>
+                                    <input value="" id="fl_1T" name="1Tadat" type="text" class="text" />
+                                </span>
+                                <span>
+                                    <label for="fldUser">2T adat:</label>
+                                    <input value="" id="fl_2T" name="2Tadat" type="text" class="text" />
+                                </span>
+                                <span>
+                                    <label for="fldUser">3T adat:</label>
+                                    <input value="" id="fl_3T" name="3Tadat" type="text" class="text" />
+                                </span>
+                                <span>
+                                    <label for="fldUser">4T adat:</label>
+                                    <input value="" id="fl_4T" name="4Tadat" type="text" class="text" />
+                                </span>
+                                <br />
+                                <span class="alignright">
+                                    <input type="submit" title="Belépés" value="Belépés" class="smlButton" />&nbsp;
+
+                                    <a href="https://ugyfelkapu.magyarorszag.hu/" class="buttonlink">Mégse</a>
+
+                                </span>
+                            </fieldset>
+
+                        </form>
+                        <!--/auth:form-->
+
+                        <!--                         <p>
+                            <a href="https://ugyfelkapu.magyarorszag.hu/regisztracio">Még nem regisztrált?</a> |
+                            <a href="/sso/elfelejtettJelszo">Elfelejtette a jelszavát?</a>
+                        </p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>
+                        <img src="https://gate.gov.hu/sso/gfx/picto.HU.S.gif" class="icon" alt="Piktogram" title="Segítség" />Segítség</h2>
+                    <p class="questionMark">
+                        <a href="http://kereses.magyarorszag.hu/portalkereses?defaultParam=segitseg">
+                            <img src="https://gate.gov.hu/sso/gfx/questionMark.gif" alt="Súgó ikon" />
+                        </a>
+                    </p>
+                    <p class="noleftpad">Ön az Ügyfélkapu bejelentkezési oldalán van. Vagy a "Belépés" gombra kattintott és szeretne belépni személyes
+                        ügyfélkapujába, vagy olyan ügyfélkapus szolgáltatást hívott meg, amelyhez bejelentkezés szükséges.
+                        Amennyiben van regisztrációja és tudja bejelentkezési adatait, lépjen be! Ha még nem regisztrált,
+                        tegye meg! Ha pedig elfelejtette jelszavát, kérjen újat! </p>
+                    <p class="noleftpad">Az Ügyfélkapu részleteiről segítséget kaphat az Ügyfélkapuval foglalkozó
+                        <a href="http://segitseg.magyarorszag.hu/etananyag/ugyfelkapu_etananyag.html">eTananyagunkban</a>.</p>
+                    <p class="noleftpad">A jelszó érvényessége maximálisan 2 év. (Ellenőrizze postafiókját, hogy kapott-e figyelmeztető üzenetet
+                        a jelszó lejáratára vonatkozóan.) Lejárt jelszóérvényesség esetén, kérjük, fáradjon be bármelyik
+                        regisztrációs szervhez, hogy regisztrációját megújíthassa.</p>
+                    <p class="morebutton">
+                        <a href="https://segitseg.magyarorszag.hu/segitseg/ugyfelkapu/regisztracio/aktivalas.html ">TOVÁBB</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <hr class="accessibility" />
+        <div id="footer">
+            <h1 class="accessibility">LÁBLÉC NAVIGÁCIÓ</h1>
+            <p>
+                <img id="blazon" src="https://gate.gov.hu/sso/gfx/blazon.gif" alt="Magyar címer" title="Magyar címer" />
+            </p>
+            <div id="footernav">
+                <ul>
+                    <li class="firstchild">
+                        <a href="http://magyarorszag.hu/informacio/impresszum.html" title="impresszum">impresszum</a>
+                    </li>
+                    <li>
+                        <a href="http://magyarorszag.hu/informacio/jogokesfeltetelek.html" title="jogok és feltételek">jogok és feltételek</a>
+                    </li>
+                    <li>
+                        <a href="http://magyarorszag.hu/informacio/adatvedelem.html" title="adatvédelem">adatvédelem</a>
+                    </li>
+                    <li>
+                        <a href="http://magyarorszag.hu/informacio/biztonsagtudat.html" title="biztonságtudat">biztonságtudat</a>
+                    </li>
+                    <li>
+                        <a href="http://kapcsolat.magyarorszag.hu/" title="kapcsolat">kapcsolat</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
