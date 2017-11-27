@@ -20,6 +20,10 @@ body {
   font-family: EON_BrixSansWeb_REGULAR;
 }
 
+.body_np {
+  padding: 0;
+}
+
 .lead {
   font-weight: 100;
   font-family: 'Roboto', sans-serif;
@@ -31,6 +35,11 @@ body {
 
 .home-media-image {
   width: 35%;
+}
+
+.highlight {
+  color: #FF5700;
+  
 }
 
 .material-icons {
@@ -79,6 +88,11 @@ body {
 .navbar {
   background-image: linear-gradient(to bottom, #f7f7f7 0%, #eee 100%);
   border: 1px solid #e5e5e5;
+}
+
+.navbar_login {
+  background-image: none;
+  border: 1px solid #000;
 }
 
 @media (min-width: 768px) {
