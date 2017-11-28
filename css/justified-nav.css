@@ -39,7 +39,6 @@ body {
 
 .highlight {
   color: #FF5700;
-  
 }
 
 .material-icons {
@@ -106,6 +105,29 @@ body {
   }
 }
 
+.footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+.myfooter {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: 40px;
+}
+
+/* loginform */
+.row-login-form{
+  padding: 30px;
+
+}
 
 /* Responsive: Portrait tablets and up */
 
