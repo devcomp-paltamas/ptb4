@@ -10,7 +10,7 @@
 
     <link rel="icon" href="lib/bootstrap-4.0.0-beta.2/favicon.ico">
 
-    <title>Jegybazár</title>
+    <title>Jegybazár | Regisztráció</title>
 
     <!-- Bootstrap core CSS -->
     <link href="lib/bootstrap-4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
@@ -19,25 +19,29 @@
     <link href="css/justified-nav.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body_np">
 
-    <div class="container">
+    <div class="container-fluuid">
 
-        <header class="masthead">
+        <!-- <header class="masthead"> -->
+        <nav class="navbar navbar_login navbar-expand-md navbar-dark bg-dark">
 
-            <h2 class="text-muted">Jegybazár<span class="highlight">.hu</span>
-            </h2>    
+            <div class="container">
 
-            <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+                <!-- <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3"> -->
+                <a class="navbar-brand" href="#">Jegybazár
+                    <span class="highlight">.hu</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav text-md-center nav-justified w-100">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="justified_nav.html">Home
-                                <span class="sr-only">(current)</span>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="justified_nav.html">
+                                Home
                             </a>
                         </li>
                         <li class="nav-item">
@@ -49,111 +53,143 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">Rólunk</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-items">
                             <a class="nav-link" href="login.html">Belépés</a>
-                            <!--                       </li>
-                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li> -->
                     </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
 
-        <main role="main">
+        <!-- </header> -->
+        <div class="container">
 
-            <!-- Jumbotron -->
-            <div class="jumbotron">
-                <h1>Jegyek bárkitől, bárhol, bármikor!</h1>
-                <p class="lead">
-                    Használd a Jegybazárt és csereberélj jegyeket a legjobb bulikra. Elfogyott az orrod elől vitték el az utolsót. Ne aggódj,
-                    irány a Jegybazár.
-                </p>
-                <p>
-                    <a class="btn btn-lg btn-success" href="events.html" role="button">
-                        Nézzük az eseményeket
-                    </a>
-                </p>
+            <div class="row justify-content-center" style="padding-top: 10px; margin-bottom: 40px;">
+
+                <div class="col-10 col-sm-8 col-md-8 col-lg-6 row-login-form">
+                    <!-- alert message -->
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                        Regelj be és már veheted is a jegyeket.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="card border-secondary">
+                        <div class="card-header">Regisztráció</div>
+                        <div class="card-body">
+
+                            <form id="reg_form">
+
+                                <div class="form-group">
+                                    <label for="reg_name">Név</label>
+                                    <input required name="reg_name" type="text" class="form-control" id="reg_name" placeholder="Név">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg_Email1">Email cím</label>
+                                    <input required name="reg_email" type="email" class="form-control" id="reg_Email1" placeholder="Email cím">
+                                    <!--                                     <small id="emailHelp" class="form-text text-muted">
+                                        Vigyázz az email címedre.
+                                    </small> -->
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="reg_birthDat">Születési idő</label>
+                                    <input required name="reg_bithDate" type="date" value="1999-09-01" max="2001-01-01" class="form-control" id="reg_birthDat">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="custom-control custom-radio">
+                                        <input id="rd_lany" name="rd_sex" type="radio" class="custom-control-input" checked value="2">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Lány</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                        <input id="rd_fiu" name="rd_sex" type="radio" class="custom-control-input" value="1">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Fiú</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <select name="location" class="custom-select">
+                                        <option value="notset" selected>Milyen településen laksz?</option>
+                                        <option value="1">Fővárosi</option>
+                                        <option value="2">Megyeszékhely</option>
+                                        <option value="3">Kistelepülés</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                <label class="custom-file">
+                                    <input name="avatar" type="file" id="file2" class="custom-file-input">
+                                    <span class="custom-file-control"></span>
+                                </label>
+                            </div>
+
+                                <div class="form-group">
+                                    <label for="reg_pwd">Jelszó</label>
+                                    <input name="reg_pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="kis , nagybetű és szám, legalább nyolc karakter hosszan"
+                                        required type="password" class="form-control" id="reg_pwd" placeholder="Jelszó">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg_pwd2">Jelszó ismét</label>
+                                    <input name="reg_pwd2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required type="password" class="form-control" id="reg_pwd2"
+                                        title="kis , nagybetű és szám, legalább nyolc karakter hosszan" required placeholder="Jelszó ismét">
+                                </div>
+
+
+                                <button type="submit" class="btn btn-primary">Mentés</button>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2>Események</h2>
-                    <p>
-                        Itt találod a legjobb bulit, böngéssz bátran és keress vagy adj el jegyeket a barátoknak, vagy más felhasználóknak.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary" href="events.html" role="button">
-                            Események &raquo;
-                        </a>
-                    </p>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Jegyek</h2>
-                    <p>
-                        Ha sietsz egyből kezdheted a jegyek böngészésével. Itt is tudsz keresni a az események neve vagy időpontja lapján.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary" href="tickets.html" role="button">
-                            Jegyek &raquo;
-                        </a>
-                    </p>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Regisztráció</h2>
-                    <p>
-                        Még nem regisztráltál? Akkor gyorsan tedd meg mert a szolgáltatás csak 
-                        tagoknak elérhető. Sőt, az új regisztrálók ajándékot kapnak.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary" href="register.html" role="button">
-                            Regisztráció &raquo;
-                        </a>
-                    </p>
-                </div>
-            </div>
-
-        </main>
+        </div>
 
         <!-- Site footer -->
-        <footer class="footer">
+        <footer class="myfooter container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-3">
                     <p>&copy; 2010
                         <script>
                             new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());
                         </script> Devcomp Kft.</p>
                 </div>
-                <div class="col-6 text-right">
+                <div class="col-6 text-center">
+                    <span class="">
+                        <a href="#" class="card-link">Adatvédelem</a>
+                        <a href="#" class="card-link">Impresszum</a>
+                        <a href="#" class="card-link">Technikai információk</a>
+                    </span>
+                </div>
+                <div class="col-3 text-right">
                     <p>
-                        Jegybazár
+                        <i class="material-icons">stars</i> Jegybazár
+                        <span class="highlight">.hu</span>
                     </p>
                 </div>
             </div>
         </footer>
 
-    </div>
-    <!-- /container -->
+        <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write(
-            '<script src="lib/bootstrap-4.0.0-beta.2/assets/js/vendor/jquery.min.js"><\/script>')
-    </script>
-    <script src="lib/bootstrap-4.0.0-beta.2/assets/js/vendor/popper.min.js"></script>
-    <script src="lib/bootstrap-4.0.0-beta.2/dist/js/bootstrap.min.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write(
+                '<script src="lib/bootstrap-4.0.0-beta.2/assets/js/vendor/jquery.min.js"><\/script>')
+        </script>
+        <script src="lib/bootstrap-4.0.0-beta.2/assets/js/vendor/popper.min.js"></script>
+        <script src="lib/bootstrap-4.0.0-beta.2/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
